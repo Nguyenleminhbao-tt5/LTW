@@ -1,0 +1,1 @@
+<footer class="wrapper-footer">FOOTER</footer>

@@ -18,6 +18,10 @@
 .navbar1__logo{
     font-size: 23px;
 }
+.navbar1__logo-link{
+    text-decoration: none;
+    color: var(--primary2-color);
+}
 .navbar1__search
 {
     margin-left: 100px;
@@ -180,19 +184,20 @@
     display: flex;
     align-items: center;  
 }
-.navbar2__searchProduct
+.navbar2__news
 {
     display: flex;
     align-items: center;
-    margin-right: 20px;
+    margin-right: 30px;
     cursor: pointer;
+
 }
-.navbar2__searchProduct-icon
+.navbar2__news-icon
 {
     font-size: 19px;
     margin-right: 5px;
 }
-.navbar2__searchProduct-text
+.navbar2__news-text
 {
     text-decoration: none;
     color: var(--primary1-color);
@@ -204,14 +209,16 @@
     text-decoration: none;
     color: var(--primary1-color);
     font-size: 16px;
-    margin: 0 20px 0 20px;
+    margin: 0 30px 0 30px;
     font-weight: 500;
+
 }
 .navbar2__contact
 {
     display: flex;
     align-items: center;
     cursor: pointer;
+    margin-left: 30px;
 }
 .navbar2__contact-icon
 {

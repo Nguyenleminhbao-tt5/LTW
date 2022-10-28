@@ -1,7 +1,9 @@
 
 <header class="wrapper-header">
             <div class="navbar1">
-                <span class="navbar1__logo">LOGO</span>
+                <span class="navbar1__logo">
+                    <a class="navbar1__logo-link" href="index.php?pages=home">LOGO</a>
+                </span>
                 <div class="navbar1__search">
                     <input type="" class="navbar1__search-text"
                     placeholder='Nhập từ khóa tìm kiếm'/>
@@ -27,9 +29,9 @@
                 <div class="navbar1__wrap">
                     <div class="navbar1__cart">
                         <i class="navbar1__cart-icon fa-solid fa-cart-shopping"></i>
-                        <a href="" class="navbar1__cart-link">Giỏ hàng</a>
+                        <a href="index.php?pages=cart" class="navbar1__cart-link">Giỏ hàng</a>
                     </div>
-                    <a href="" class="navbar1__login">Đăng nhập</a>
+                    <a href="index.php?pages=login" class="navbar1__login">Đăng nhập</a>
                     <div class="navbar1__social">
                         <a href="" class="navbar1__social-item">
                             <i class="navbar1__social-icon_fb fa-brands fa-facebook"></i>
@@ -47,11 +49,11 @@
                     <i class="navbar2__category-icon_second fa-solid fa-angle-down"></i>
                 </div>
                 <div class="navbar2__wrap">
-                    <div class="navbar2__searchProduct">
-                        <i class="navbar2__searchProduct-icon fa-solid fa-truck-fast"></i>
-                        <a href="" class="navbar2__searchProduct-text">Tra cứu đơn hàng</a>
+                    <div class="navbar2__news">
+                        <i class="navbar2__news-icon fa-solid fa-newspaper"></i>
+                        <a href="index.php?pages=news" class="navbar2__news-text">Tin tức</a>
                     </div>
-                    <a href="" class="navbar2__intro">Giới thiệu</a>
+                    <a href="index.php?pages=intro" class="navbar2__intro">Giới thiệu</a>
                     <div class="navbar2__contact">
                         <i class="navbar2__contact-icon fa-solid fa-phone"></i>
                         <span class="navbar2__contact-text">Liên hệ</span>

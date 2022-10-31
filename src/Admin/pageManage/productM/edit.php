@@ -1,25 +1,43 @@
-<h3>productM</h3>
+<h3>edit</h3>
+<?php
+    $id=$_GET['id'];
+    $sql_show="SELECT * FROM product WHERE product_id='".$id."' LIMIT 1";
+    $sql_query=mysqli_query($data,$sql_show);
+    
+?>
 <table >
-    <form method="post" action="./pageManage/productM/handle.php" enctype="multipart/form-data">
-        <tr>
+    <form method="post" action="./pageManage/productM/handle.php?id=<?php echo $_GET['id']?>" enctype="multipart/form-data" >
+        <?php 
+        // đặt tên bảng trùng với tên của thư mục (bỏ M)
+        // đặt tên name trùng với thuộc tính của bảng   
+        while($row=mysqli_fetch_array($sql_query))
+        {
+         ?>
+
+<tr>
             <th>Mã sản phẩm</th>
-            <th><input type="text" name="product_id"></th>
+            <th><input type="text" name="product_id" value=<?php 
+            echo $row['product_id'] ?>></th>
         </tr>
         <tr>
             <th>Tên sản phẩm</th>
-            <th><input type="text" name="product_name"></th>
+            <th><input type="text" name="product_name"value=<?php 
+            echo $row['product_name'] ?>></th>
         </tr>
         <tr>
             <th>Giá mới</th>
-            <th><input type="text" name="product_priceN"></th>
+            <th><input type="text" name="product_priceN"value=<?php 
+            echo $row['product_priceN'] ?>></th>
         </tr>
         <tr>
             <th>Giá cũ</th>
-            <th><input type="text" name="product_priceO"></th>
+            <th><input type="text" name="product_priceO"value=<?php 
+            echo $row['product_priceO'] ?>></th>
         </tr>
         <tr>
             <th>Sales</th>
-            <th><input type="text" name="product_sales"></th>
+            <th><input type="text" name="product_sales"value=<?php 
+            echo $row['product_sales'] ?>></th>
         </tr>
         <tr>
             <th>Ảnh chính</th>
@@ -39,11 +57,17 @@
         </tr>
         <tr>
             <th>Mô tả</th>
-            <th><textarea name="product_descrip"></textarea></th>
+            <th>
+                <textarea name="product_descrip">
+                <?php 
+                    echo $row['product_descrip'] ?>
+                </textarea>
+            </th>
         </tr>
         <tr>
             <th>Số lượng</th>
-            <th><input type="text" name="product_amount"></th>
+            <th><input type="text" name="product_amount"value=<?php 
+            echo $row['product_amount'] ?>></th>
         </tr>
         <tr>
             <th>Danh mục</th>
@@ -62,7 +86,10 @@
             </th>
         </tr>
         <tr>
-            <th><input type="submit" name="product_insert" value="Thêm sản phẩm"></th>
+            <th><input type="submit" name="product_edit" value="sửa sản phẩm"></th>
         </tr>
+       <?php
+        }
+        ?>
     </form>
 </table>

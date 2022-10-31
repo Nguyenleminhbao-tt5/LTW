@@ -10,9 +10,9 @@
       content="Web site created using create-react-app"
     />
     <link rel="stylesheet" href="../public/fontawesome-free-6.1.1-web/css/all.min.css">
-    <link rel="stylesheet" href="base.css">
-    <link rel="stylesheet" href="./module/module.css">
-    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/module.css">
+    <link rel="stylesheet" href="./assets/css/index.css">
     <style>
       #root {
         font-family: 'Montserrat';

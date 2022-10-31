@@ -52,6 +52,21 @@
                             require('./pageManage/productM/insert.php');
                             require('./pageManage/productM/show.php');
                         }
+                        else if ($protocol=='productM' && $method=='edit')
+                        {
+                            require('./pageManage/productM/edit.php');
+                           
+                        }
+                        else if($protocol=='newsM' && $method=='insert')
+                        {
+                            require('./pageManage/newsM/insert.php');
+                            require('./pageManage/newsM/show.php');
+                        }
+                        else if ($protocol=='newsM' && $method=='edit')
+                        {
+                            require('./pageManage/newsM/edit.php');
+                           
+                        }
                     }
                     ?>
                 </div>
